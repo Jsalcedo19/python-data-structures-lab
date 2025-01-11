@@ -6,12 +6,15 @@
 
 def manage_students():
     students = ['Alice', 'Bob', 'Charlie']
-    first_student = students(1)
-    last_student = students(-1)
+    first_student = students[1]
+    first_student = students[1]
+    last_student = students[-1]
+    return first_student, last_student
 
 # Call the function and print the result
 print('Exercise 1:', manage_students())
-
+first_student, last_student = manage_students()
+print('Exercise 1:', first_student, last_student)
 
 # Exercise 2: Loop and String Concatenation
 #
@@ -80,6 +83,7 @@ def list_home_town_items():
 
     for key, value in home_town.items():
         list_home_town_items.append(f"{key} = {value}")
-    return list_home_town_items
+        return list_home_town_items
+
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
